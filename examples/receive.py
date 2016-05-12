@@ -31,7 +31,7 @@ def main():
     if len(sys.argv) > 1:
         rfxcom_device = sys.argv[1]
     else:
-        rfxcom_device = '/dev/serial/by-id/usb-RFXCOM_RFXtrx433_A1Y0NJGR-if00-port0'
+        rfxcom_device = '/dev/ttyUSB0'
 
     core = RFXtrx.Core(rfxcom_device, print_callback, debug=True)
 
